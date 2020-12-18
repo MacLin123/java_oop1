@@ -9,7 +9,6 @@ public class MyTriangle {
     private MyPoint v3;
 
     private enum TriangleTypes {
-        EQUILATERAL("Equilateral"),
         ISOSCELES("Isosceles"),
         SCALENE("Scalene");
         private String type;
@@ -55,9 +54,8 @@ public class MyTriangle {
         boolean edge1Eq2 = Double.compare(edge1, edge2) == 0;
         boolean edge1Eq3 = Double.compare(edge1, edge3) == 0;
         boolean edge2Eq3 = Double.compare(edge2, edge3) == 0;
-        if (edge1Eq2 && edge1Eq3 && edge2Eq3) {
-            return TriangleTypes.EQUILATERAL.getType();
-        } else if ((edge1Eq2 && edge1Eq3) || (edge1Eq2 && edge2Eq3)
+
+        if ((edge1Eq2 && edge1Eq3) || (edge1Eq2 && edge2Eq3)
                 || (edge1Eq3 && edge2Eq3)) {
             return TriangleTypes.ISOSCELES.getType();
         }
