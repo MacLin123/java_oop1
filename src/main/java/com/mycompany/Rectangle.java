@@ -2,6 +2,7 @@ package com.mycompany;
 
 /**
  * This class provides methods to work with rectangles
+ * @author Mikhail Kurakin
  */
 
 public class Rectangle {

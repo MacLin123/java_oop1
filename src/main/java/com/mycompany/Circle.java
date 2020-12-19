@@ -2,6 +2,7 @@ package com.mycompany;
 
 /**
  * This class provides methods to work with circles
+ * @author Mikhail Kurakin
  */
 public class Circle {
     private double radius = 1.0;

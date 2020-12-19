@@ -2,6 +2,7 @@ package com.mycompany;
 
 /**
  * This class provides methods to work with points
+ * @author Mikhail Kurakin
  */
 public class MyPoint {
     private int x = 0;
