@@ -2,6 +2,7 @@ package com.mycompany;
 
 /**
  * This class provides methods to work with triangles
+ *
  * @author Mikhail Kurakin
  */
 public class MyTriangle {

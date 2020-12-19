@@ -3,6 +3,7 @@ package com.mycompany;
 /**
  * This class presents employee Author.
  * It has methods for getting and setting information about Author
+ *
  * @author Mikhail Kurakin
  */
 public class Author {

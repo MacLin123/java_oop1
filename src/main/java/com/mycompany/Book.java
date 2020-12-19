@@ -3,6 +3,7 @@ package com.mycompany;
 /**
  * This class presents book entity.
  * It has methods for getting and setting information about book
+ *
  * @author Mikhail Kurakin
  */
 public class Book {

@@ -3,6 +3,7 @@ package com.mycompany;
 /**
  * This class presents employee entity.
  * It has methods for getting and setting information about employee
+ *
  * @author Mikhail Kurakin
  */
 public class Employee {
