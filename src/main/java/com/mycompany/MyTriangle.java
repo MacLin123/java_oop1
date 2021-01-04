@@ -1,5 +1,7 @@
 package com.mycompany;
 
+import java.util.Objects;
+
 /**
  * This class provides methods to work with triangles
  *
@@ -62,5 +64,18 @@ public class MyTriangle {
             return TriangleTypes.ISOSCELES.getType();
         }
         return TriangleTypes.SCALENE.getType();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyTriangle that = (MyTriangle) o;
+        return v1.equals(that.v1) && v2.equals(that.v2) && v3.equals(that.v3);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(v1, v2, v3);
     }
 }

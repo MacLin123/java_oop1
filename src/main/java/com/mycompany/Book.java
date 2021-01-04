@@ -1,5 +1,8 @@
 package com.mycompany;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 /**
  * This class presents book entity.
  * It has methods for getting and setting information about book
@@ -86,5 +89,20 @@ public class Book {
             }
         }
         return authorInfo.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Double.compare(book.price, price) == 0 && qty == book.qty && name.equals(book.name) && Arrays.equals(authors, book.authors);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(name, price, qty);
+        result = 31 * result + Arrays.hashCode(authors);
+        return result;
     }
 }
